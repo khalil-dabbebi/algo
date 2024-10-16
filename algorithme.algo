@@ -1,0 +1,20 @@
+ALGORITHM khalil (str:STRING)
+VAR
+   char:CHAR  
+   exp:INTEGER:=1;
+   length:INTEGER;
+   M:=["a", "e", "i", "o", "u","y", "A", "E", "I", "O", "U","Y"];
+   S:INTEGER:=0;
+BEGIN
+   FOR  char in str   DO
+    length:=length+1;
+    
+    IF (char := "" ) THEN
+        exp :=exp +1 
+    END_IF
+
+    IF ( char :=M) THEN
+        S=S+1
+    END_IF
+   END_FOR 
+END
